@@ -1,0 +1,357 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+    
+
+h1, h2, h3, a, p, td, th{
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-image: url('Group133-01.png');
+    background-size: cover;
+}
+
+a {
+    color: #268AFF; 
+    text-decoration: none;
+
+}
+
+
+
+/*Header*/
+nav{
+    margin: 40px 0px;
+	height: 80px;
+	display: flex;
+    align-items: center;
+	justify-content: space-between;
+	padding: 32px 200px;
+	position: fixed;
+	top:0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	transition: .3s;
+
+}
+nav ul li {
+
+	display: inline-block;
+
+}
+ul.menu li{
+	margin-left: 30px; 
+}
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	transition: .2s;
+}
+
+.menu {
+    position: relative;
+    right: -200px;
+}
+
+.menu a{
+	font-size: 25px;
+}
+
+.logo a{
+	font-size: 42px;
+	line-height: 20px;
+}
+nav div a::after{
+	display: block;
+    content: '';
+	padding-top: 1%;
+    border-bottom: solid 3px #fff;
+    padding-bottom: 1%;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+}
+nav div a:hover::after{
+	transform: scaleX(1);
+}
+
+.logo{	
+    position: relative;
+	margin-top: -15px;
+    left: -250px;
+}
+.logo hr {
+	display: inline-block;
+	width: 15px;
+	margin: 2px;
+}
+.logo span {
+	font-size: 14px;
+	margin-left: 2px;
+}
+
+
+img{
+    width: 300px;
+}
+/* Menu */
+main {
+    padding-top: 20px;
+}
+
+section {
+        
+        text-align: justify;
+        height: 100vh;	
+}
+
+
+.container-injection {
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1100px;
+    height: 700px;
+}
+
+.text-inj{
+    color: #8DFEFF;
+    margin-right: 60px;
+}
+
+.text-inj h1{
+    font-weight: bolder;
+    font-size: 70px;
+    text-align: left;
+}
+
+.text-inj p{
+    padding: 20px 0px ;
+    font-size: 20px;
+}
+
+.text-inj a{
+    font-size: 20px;
+}
+
+.card-injection {
+
+    width: 1000px;
+    height: 360px;  
+    margin: 0px 30px;
+    background-color: rgba( 138, 36, 142, 0.6);
+    border-radius: 20px;
+}
+
+.card-injection h2 {
+    margin: 20px;
+    position: relative;
+    top: 200px;
+    font-size: 30px;
+}
+
+.card-injection a{
+    margin: 20px;
+    position: relative;
+    top: 180px;
+    color: white;
+    font-size: 10px;
+}
+
+.card-injection a img{
+    width: 10px;
+}
+
+.card-injection a:hover {
+    transform: translateX(3px);
+    font-size: 12px;
+}
+
+.button {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #268AFF;
+    border-radius: 30px; 
+    width: 400px;
+    height: 200px;
+}
+
+.button:hover {
+    transform: translateY(3px);
+    border: 1px solid #268AFF;
+}
+
+    
+
+/*About*/
+
+.about {
+    height: 100vh;
+}
+
+.container-about {
+  
+    position: relative;
+    height: 550px;
+    width: 1100px;
+    background-color: rgba( 138, 36, 142, 0.6);
+    border-radius: 20px;
+    top: 100px;
+}
+
+
+
+.text-abt{
+    position: relative;
+    text-align: right;
+    margin: 0px 75px 0px 75px;
+    top: 20px;
+}
+
+.text-abt h2 {
+    font-weight: 900;
+    font-size: 30px;
+    
+}
+
+
+.text-abt h1 {
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.text-abt2{
+    padding-right: 60px;
+}
+
+.text-abt2 h3{
+    line-height: 1.5em;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.text-abt2 p{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.tentang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    height: 450px;
+    
+}
+
+
+
+.tentang img{
+    width: 350px;
+}
+
+/*Syarat*/
+.syarat {
+    height: 100vh;
+
+}
+
+.container-syarat {
+    position: relative;
+    top: 200px;
+    width: 1300px;
+    height: 600px;
+    display: flex;
+    background-color: rgba( 138, 36, 142, 0.6);
+    align-items: center;
+    border-radius: 20px;
+    
+}
+
+.container-syarat h1{
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 20px;
+    width: 400px;
+    text-align: right;
+}
+
+table {
+    margin: 40px;
+    padding: 40px 0px;
+}
+
+th {
+    line-height: 1.5em;
+    padding-right: 10px;
+    font-size: 2em;
+}
+
+td {
+    font-size: 17px;
+    padding: 5px;
+}
+
+
+
+/*Footer*/
+
+footer {
+    height: 110vh;
+}
+
+.foot{
+    position: relative;
+    top: 300px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 800px;
+}
+
+.foot img{
+    width: 300px;
+}
+
+.foot h1{
+    font-size: 60px;
+    border: solid;
+    border-width: 0px 0px 4px 0px;
+    color: white;
+}
+
+.medsos {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    left: -1px;
+    margin: 0px -30px;
+}
+
+
+
+.foot p{
+    
+    padding-top: 20px;
+    color: white;
+    font-size: 25px;
+}
+
+.foot p img{
+    position: relative;
+    top: 5px;
+    width: 25px;
+}
